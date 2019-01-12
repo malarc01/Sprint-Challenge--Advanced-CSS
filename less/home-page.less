@@ -11,13 +11,41 @@
     p {
       padding:0 15px;
     }
-  
+    .header-img {
+     img {
+       @media @phone {
+         display: flex;
+         max-width: 500px;
+         // border: 1px solid lime;
+         // flex-wrap: nowrap;
+         // width: 50%;
+
+
+       }
+     }
+   }
+
   }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    .blast {
+      @media @phone {
+        width: 98%;
+      }
+    }
+  .sky {
+    @media @phone {
+      display: none;
+    }
+  }
+  .launch {
+      @media @phone {
+        display: none;
+      }
+    }
 
     img {
       width: 28%;
@@ -58,13 +86,26 @@
       }
 
       .btn {
+        display: flex;
+        justify-content: center;
+        color: white;
+        padding: 8px;
+        margin-right: 242px;
+        @media @phone{
+          padding: 20px 1px ;
+          margin: 1px;
+        }
+          &:hover {
+            color: @btn-bg-color ;
+            background-color:white ;
+          }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
